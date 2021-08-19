@@ -9,10 +9,31 @@
 
 <title>But why are you here?</title>
 
-<p>po</p>
+<p id = "yes">po</p>
 <img src="02706793434805344498.png" alt="sus">
 <img src="10318315268069799248.png" alt="schlongus">
-  
+
+<button onclick="getLocation()">FBI Wants to know your location</button>
+
+
+<script>
+var x = document.getElementById("yes");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(fart);
+  } else { 
+    x.innerHTML = "your browser sucks";
+  }
+}
+
+function fart(position) {
+  x.innerHTML = "FBI know your location and do not care"
+}
+
+</script>
+
+
 </body>
 
 </head>
