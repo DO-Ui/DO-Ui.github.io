@@ -9,28 +9,25 @@
 
 <title>But why are you here?</title>
 
-<p id = "yes">po</p>
-<img src="02706793434805344498.png" alt="sus">
-<img src="10318315268069799248.png" alt="schlongus">
-<img src="05418731486219684908.png" alt="p">
+<h1>I have a website for some reason so um</h1>
 
-<button onclick="getLocation()">FBI Wants to know your location</button>
+<p>Click to get a random image</p>
+
+<img id="yes">
+
+<button onclick="randomimage()">Random</button>
 
 
 <script>
 var x = document.getElementById("yes");
 
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(fart);
-  } else { 
-    x.innerHTML = "your browser sucks";
-  }
+var max = 3;
+var min = 0;
+
+function randomimage() {
+    x.src = Math.floor(Math.random() * (max - min) + min) + ".png";
 }
 
-function fart(position) {
-  x.innerHTML = "FBI know your location and do not care"
-}
 
 </script>
 
