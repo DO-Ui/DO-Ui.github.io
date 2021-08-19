@@ -21,11 +21,11 @@
 <script>
 var x = document.getElementById("yes");
 
-var max = 3;
-var min = 0;
+var max = 6;
+var min = 1;
 
 function randomimage() {
-    x.src = Math.floor(Math.random() * (max - min) + min) + ".png";
+    x.src = Math.floor(Math.random() * (max - min + 1) + min) + ".png";
 }
 
 
